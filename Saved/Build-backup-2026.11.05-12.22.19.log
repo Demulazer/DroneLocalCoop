@@ -1,0 +1,491 @@
+Log started at 11/05/2026 16:37:14 (2026-11-05T13:37:14Z)
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\111\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\111\OneDrive\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  C:\Users\111\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Log file: C:\Users\111\Unreal Projects\DronesSetup\Saved\Build.log
+
+Setting temp directory to 'C:\Users\111\AppData\Local\Temp\UnrealBuildTool\f2d894e7'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.19041.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.26100.0, Version_AutoSdk=10.0.22621.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+Command line: "C:\Program Files\Epic Games\UE_5.5\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" DronesSetupEditor Win64 Development "-Project=C:/Users/111/Unreal Projects/DronesSetup/DronesSetup.uproject" -WaitMutex "-Log=C:/Users/111/Unreal Projects/DronesSetup/Saved/Build.log"
+Invalidating makefile for DronesSetupEditor (source file added)
+Skipping C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\BuildRules\UE5Rules.dll: File is installed
+Skipping C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\BuildRules\UE5ProgramRules.dll: File is installed
+Found VisualStudio2022 installation: C:\Program Files\Microsoft Visual Studio\2022\Community (Product=Microsoft.VisualStudio.Product.Community, Version=17.14.36414.22)
+Found Visual Studio toolchain: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207 (Family=14.44.35207, FamilyRank=1, Version=14.44.35215, Is64Bit=True, ReleaseChannel=Latest, Architecture=x64, Error=False, Redist=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Redist\MSVC\14.44.35112)
+Available x64 toolchains (1):
+ * C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207
+    (Family=14.44.35207, FamilyRank=1, Version=14.44.35215, Is64Bit=True, ReleaseChannel=Latest, Architecture=x64)
+Visual Studio 2022 compiler version 14.44.35215 is not a preferred version. Please use the latest preferred version 14.38.33130
+Building UnrealEditor - DronesSetupEditor - Win64 - Development
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on GameplayTags which breaks the chain
+Found circular reference to PacketHandler.Build.cs, but PacketHandler declares a cycle on ReliabilityHandlerComponent which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Documentation.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to EditorConfig.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to KismetCompiler.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to EditorConfig.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to SourceControlWindows.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to SourceControlWindows.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to KismetCompiler.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MovieSceneTracks.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UMG.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AudioMixer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AudioMixer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to SourceControlWindows.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to EditorConfig.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to SourceControlWindows.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MainFrame.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MaterialShaderQualitySettings.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Documentation.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to BlueprintGraph.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Documentation.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MainFrame.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MovieSceneTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MovieSceneTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Sequencer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MainFrame.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AIModule.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Persona.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to EditorConfig.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to AssetTools.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to EditorConfig.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to GraphEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Kismet.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MaterialShaderQualitySettings.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Landscape.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to PropertyEditor.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to MaterialShaderQualitySettings.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to UnrealEd.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Renderer.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on Landscape which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on CollisionAnalyzer which breaks the chain
+Found circular reference to Engine.Build.cs, but Engine declares a cycle on LogVisualizer which breaks the chain
+Compiler: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe
+Linker: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\link.exe
+Library Manager: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\link.exe
+Resource Compiler: C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x64\rc.exe
+Using EngineIncludeOrderVersion.Unreal5_5 for target DronesSetupEditor.Target.cs
+UnrealHeaderTool needs to run because there are a different number of UObject source files in module DronesSetup
+Parsing headers for DronesSetupEditor
+  Running Internal UnrealHeaderTool "C:\Users\111\Unreal Projects\DronesSetup\DronesSetup.uproject" "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\DronesSetupEditor\Development\DronesSetupEditor.uhtmanifest" -WarningsAsErrors -installed
+Step - Exports
+       Exporter Stats skipped
+       Exporter Json skipped
+       Running exporter CodeGen
+Total of 3 written
+Reflection code generated for DronesSetupEditor in 4.5332205 seconds
+Found 5 shared PCH headers (listed in order of preference):
+	UnrealEd
+	Engine
+	Slate
+	CoreUObject
+	Core
+  CppStandard Cpp17 cannot use PCHUsage UseExplicitOrSharedPCHs. Overriding to NoPCHs for ACLPlugin
+  CppStandard Cpp17 cannot use PCHUsage UseExplicitOrSharedPCHs. Overriding to NoPCHs for ACLPluginEditor
+  CppStandard Cpp17 cannot use PCHUsage UseExplicitOrSharedPCHs. Overriding to NoPCHs for UnrealUSDWrapper
+  CppStandard Cpp17 cannot use PCHUsage UseExplicitOrSharedPCHs. Overriding to NoPCHs for TraceAnalysis
+VerseVMBytecodeGenerator.Generate, generating CPP headers in: 'C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode'
+	Writing out generated header file. Changed:False Path:'C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode\VVMBytecodeOps.gen.h'
+	Writing out generated header file. Changed:False Path:'C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode\VVMBytecodesAndCaptures.gen.h'
+	Writing out generated header file. Changed:False Path:'C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode\VVMMakeCapturesFuncs.gen.h'
+	Writing out generated header file. Changed:False Path:'C:\Program Files\Epic Games\UE_5.5\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VerseVMBytecode\VVMCaptureSwitch.gen.h'
+Compile module: DronesSetup
+     Linking: UnrealEditor-DronesSetup.lib
+Updating C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib.rsp: contents have changed. Saving previous version to C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib.rsp.old.
+     Command: /LIB @"C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib.rsp"
+     Linking: UnrealEditor-DronesSetup.dll
+     Command: @"C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.dll.rsp"
+Updating C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.dll.rsp: contents have changed. Saving previous version to C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.dll.rsp.old.
+StickHalfAxisModifier.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.cpp.obj" doesn't exist.
+StickHalfAxisModifier.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.cpp.sarif" doesn't exist.
+StickHalfAxisModifier.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.cpp.dep.json" doesn't exist.
+StickHalfAxisModifier.gen.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.gen.cpp.obj" doesn't exist.
+StickHalfAxisModifier.gen.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.gen.cpp.sarif" doesn't exist.
+StickHalfAxisModifier.gen.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.gen.cpp.dep.json" doesn't exist.
+DronesSetup.init.gen.cpp: Prerequisite C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\UnrealEditor\Inc\DronesSetup\UHT\DronesSetup.init.gen.cpp is newer than the last execution of the action: 11/05/2026 16:37:20 vs 11/05/2026 16:21:05
+UnrealEditor-DronesSetup.lib: Prerequisite C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.cpp.obj doesn't exist.
+UnrealEditor-DronesSetup.dll: Prerequisite C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\StickHalfAxisModifier.cpp.obj doesn't exist.
+DronesSetupEditor.target: Prerequisite UnrealEditor-DronesSetup.dll is produced by outdated action.
+Checking for live coding mutex: Global\LiveCoding_C++Program Files+Epic Games+UE_5.5+Engine+Binaries+Win64+UnrealEditor.exe
+Deleting outdated item: C:\Users\111\Unreal Projects\DronesSetup\Binaries\Win64\UnrealEditor-DronesSetup.pdb
+Deleting outdated item: C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib
+Building DronesSetupEditor...
+Using Visual Studio 2022 14.44.35215 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Warning: Visual Studio 2022 compiler is not a preferred version
+Determining max actions to execute in parallel (14 physical cores, 20 logical cores)
+  Executing up to 14 processes, one per physical core
+  Requested 1.5 GB memory per action, 6.1 GB available: limiting max parallel actions to 4
+Using Unreal Build Accelerator local executor to run 6 action(s)
+  Storage capacity 40Gb
+---- Starting trace: 261105_163721 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 6 action(s) started ------
+[1/6] Compile [x64] DronesSetup.init.gen.cpp
+[2/6] Compile [x64] StickHalfAxisModifier.cpp
+[3/6] Compile [x64] StickHalfAxisModifier.gen.cpp
+[4/6] Link [x64] UnrealEditor-DronesSetup.lib
+   Создается библиотека C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib и объект C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.exp
+[5/6] Link [x64] UnrealEditor-DronesSetup.dll
+   Создание объекта C:\Users\111\Unreal Projects\DronesSetup\Binaries\Win64\UnrealEditor-DronesSetup.exp
+[6/6] WriteMetadata DronesSetupEditor.target (UBA disabled)
+Trace file written to C:/Users/111/Unreal Projects/DronesSetup/Saved/Build.uba with size 3.8kb
+Total time in Unreal Build Accelerator local executor: 5.09 seconds
+Total execution time: 12.36 seconds
+WriteFileIfChanged() wrote 4 changed files of 56 requested writes.
+Timeline:
+
+[ 0.000]
+[ 0.000](+12.358) <unknown>
+[12.358]

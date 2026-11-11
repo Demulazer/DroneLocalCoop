@@ -1,0 +1,8 @@
+{
+	"BuildId": "43139311",
+	"Modules": 
+	{
+		"DronesSetup": "UnrealEditor-DronesSetup.dll",
+		"DronesSetupEditor": "UnrealEditor-DronesSetupEditor.dll"
+	}
+}

@@ -1,0 +1,61 @@
+Log started at 11/05/2026 16:48:49 (2026-11-05T13:48:49Z)
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\111\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\111\OneDrive\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  C:\Users\111\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Log file: C:\Users\111\Unreal Projects\DronesSetup\Saved\Build.log
+Deleting old log file: C:\Users\111\Unreal Projects\DronesSetup\Saved\Build-backup-2026.11.05-12.22.10.log
+
+Setting temp directory to 'C:\Users\111\AppData\Local\Temp\UnrealBuildTool\f2d894e7'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.19041.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.26100.0, Version_AutoSdk=10.0.22621.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+Command line: "C:\Program Files\Epic Games\UE_5.5\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" DronesSetupEditor Win64 Development "-Project=C:/Users/111/Unreal Projects/DronesSetup/DronesSetup.uproject" -WaitMutex "-Log=C:/Users/111/Unreal Projects/DronesSetup/Saved/Build.log"
+Generated code is up to date.
+ArcadeCoastingComponent.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\ArcadeCoastingComponent.cpp.obj" doesn't exist.
+ArcadeCoastingComponent.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\ArcadeCoastingComponent.cpp.sarif" doesn't exist.
+ArcadeCoastingComponent.cpp: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\ArcadeCoastingComponent.cpp.dep.json" doesn't exist.
+LocalMultiplayerSubsystem.cpp: Prerequisite C:\Users\111\Unreal Projects\DronesSetup\Source\DronesSetup\LocalMultiplayerSubsystem.cpp is newer than the last execution of the action: 11/05/2026 16:48:49 vs 11/05/2026 16:38:52
+UnrealEditor-DronesSetup.lib: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib" doesn't exist.
+DronesSetupEditor.target: Prerequisite C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\DronesSetupEditor\Development\TargetMetadata.dat is newer than the last execution of the action: 11/05/2026 16:48:22 vs 11/05/2026 16:38:53
+UnrealEditor-DronesSetup.dll: Produced item "C:\Users\111\Unreal Projects\DronesSetup\Binaries\Win64\UnrealEditor-DronesSetup.pdb" doesn't exist.
+Checking for live coding mutex: Global\LiveCoding_C++Program Files+Epic Games+UE_5.5+Engine+Binaries+Win64+UnrealEditor.exe
+Building DronesSetupEditor...
+Using Visual Studio 2022 14.44.35215 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Warning: Visual Studio 2022 compiler is not a preferred version
+Determining max actions to execute in parallel (14 physical cores, 20 logical cores)
+  Executing up to 14 processes, one per physical core
+  Requested 1.5 GB memory per action, 15.63 GB available: limiting max parallel actions to 10
+Using Unreal Build Accelerator local executor to run 5 action(s)
+  Storage capacity 40Gb
+Deleting old log file: C:\Users\111\Unreal Projects\DronesSetup\Saved\Build-backup-2026.11.05-12.23.07.uba
+---- Starting trace: 261105_164849 ----
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+------ Building 5 action(s) started ------
+[1/5] Compile [x64] ArcadeCoastingComponent.cpp
+[2/5] Compile [x64] LocalMultiplayerSubsystem.cpp
+[3/5] Link [x64] UnrealEditor-DronesSetup.lib
+   Создается библиотека C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.lib и объект C:\Users\111\Unreal Projects\DronesSetup\Intermediate\Build\Win64\x64\UnrealEditor\Development\DronesSetup\UnrealEditor-DronesSetup.exp
+[4/5] Link [x64] UnrealEditor-DronesSetup.dll
+   Создание объекта C:\Users\111\Unreal Projects\DronesSetup\Binaries\Win64\UnrealEditor-DronesSetup.exp
+[5/5] WriteMetadata DronesSetupEditor.target (UBA disabled)
+Trace file written to C:/Users/111/Unreal Projects/DronesSetup/Saved/Build.uba with size 3.7kb
+Total time in Unreal Build Accelerator local executor: 5.94 seconds
+Total execution time: 6.46 seconds
+WriteFileIfChanged() wrote 0 changed files of 0 requested writes.
+Timeline:
+
+[ 0.000]
+[ 0.000](+6.457) <unknown>
+[ 6.457]
