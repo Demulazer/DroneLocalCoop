@@ -23,6 +23,13 @@ private:
     void VerifyStickMovement();
     void StartCoastingTest();
     void VerifyCoasting();
+    void RefreshMovementComponents();
+    void StartOmnidirectionalTest();
+    void VerifyOmnidirectionalTest();
+    int32 MovementTestPhase = 0;
+    TArray<FTransform> MovementTestStarts;
+    TArray<float> MovementTestReferenceYaws;
+    FTimerHandle MovementRefreshTimer;
     TArray<FVector> CoastingStartPositions;
     int32 StickTestPhase = 0;
     int32 RoutingTestCase = 0;

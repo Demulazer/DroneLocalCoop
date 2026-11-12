@@ -159,6 +159,9 @@ bool ULocalMultiplayerViewportClient::InputKey(const FInputKeyEventArgs& Args)
         }
         if (APlayerController* Player = GetAssignedPlayer(Source))
         {
+#if UE_VERSION_OLDER_THAN(5, 6, 0)
+            Player->InputKey(FInputKeyParams(Key, Args.Event, Args.AmountDepressed, true, Args.InputDevice));
+#else
             const FInputKeyEventArgs PlayerArgs(
                 Args.Viewport,
                 Args.InputDevice,
@@ -170,6 +173,7 @@ bool ULocalMultiplayerViewportClient::InputKey(const FInputKeyEventArgs& Args)
             );
 
             Player->InputKey(PlayerArgs);
+#endif
         }
     }
     // An unassigned/third gamepad must never fall through to player one.
@@ -177,24 +181,40 @@ bool ULocalMultiplayerViewportClient::InputKey(const FInputKeyEventArgs& Args)
 }
 
 
+#if UE_VERSION_OLDER_THAN(5, 6, 0)
+bool ULocalMultiplayerViewportClient::InputAxis(FViewport* InViewport, FInputDeviceId Device,
+    FKey AxisKey, float Delta, float DeltaTime, int32 NumSamples, bool bGamepad)
+#else
 bool ULocalMultiplayerViewportClient::InputAxis(const FInputKeyEventArgs& Args)
+#endif
 {
-    const FKey SonyKey = TranslateSonyKey(Args.Key);
+#if !UE_VERSION_OLDER_THAN(5, 6, 0)
+    const FInputDeviceId Device = Args.InputDevice;
+    const FKey AxisKey = Args.Key;
+#endif
+    const FKey SonyKey = TranslateSonyKey(AxisKey);
     const bool bSony = SonyKey.IsValid();
-    const FKey Key = bSony ? SonyKey : Args.Key;
+    const FKey Key = bSony ? SonyKey : AxisKey;
 
     // Обычный ввод клавиатуры и мыши передаём движку.
     if (!bSony && !Key.ToString().StartsWith(TEXT("Gamepad_")))
     {
+#if UE_VERSION_OLDER_THAN(5, 6, 0)
+        return Super::InputAxis(InViewport, Device, AxisKey, Delta, DeltaTime, NumSamples, bGamepad);
+#else
         return Super::InputAxis(Args);
+#endif
     }
 
     if (!IgnoreInput())
     {
-        const FString Source = GetGamepadSource(bSony, Args.InputDevice);
+        const FString Source = GetGamepadSource(bSony, Device);
 
         if (APlayerController* Player = GetAssignedPlayer(Source))
         {
+#if UE_VERSION_OLDER_THAN(5, 6, 0)
+            Player->InputKey(FInputKeyParams(Key, Delta, DeltaTime, NumSamples, true, Device));
+#else
             const FInputKeyEventArgs PlayerArgs(
                 Args.Viewport,
                 Args.InputDevice,
@@ -206,6 +226,7 @@ bool ULocalMultiplayerViewportClient::InputAxis(const FInputKeyEventArgs& Args)
             );
 
             Player->InputKey(PlayerArgs);
+#endif
         }
     }
 

@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameViewportClient.h"
+#include "Misc/EngineVersionComparison.h"
 #include "LocalMultiplayerViewportClient.generated.h"
 
 /** Assigns physical gamepads to local players in join order, regardless of brand. */
@@ -11,7 +12,12 @@ class DRONESSETUP_API ULocalMultiplayerViewportClient : public UGameViewportClie
     GENERATED_BODY()
 public:
     virtual bool InputKey(const FInputKeyEventArgs& Args) override;
+#if UE_VERSION_OLDER_THAN(5, 6, 0)
+    virtual bool InputAxis(FViewport* InViewport, FInputDeviceId Device, FKey Key,
+        float Delta, float DeltaTime, int32 NumSamples = 1, bool bGamepad = false) override;
+#else
     virtual bool InputAxis(const FInputKeyEventArgs& Args) override;
+#endif
     static void RegisterSonyKeys();
     virtual void PostRender(UCanvas* Canvas) override;
     void ResetGamepadAssignments();
