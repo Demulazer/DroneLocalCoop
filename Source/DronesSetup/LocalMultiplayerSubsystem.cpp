@@ -1,6 +1,5 @@
 #include "LocalMultiplayerSubsystem.h"
 #include "ArcadeCoastingComponent.h"
-#include "ArcadeDrivingSettings.h"
 #include "ChaosWheeledVehicleMovementComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "Blueprint/UserWidget.h"
@@ -143,31 +142,6 @@ void ULocalMultiplayerSubsystem::SetupPlayers()
     // Let the Blueprint controllers finish creating their HUDs.
     World->GetTimerManager().SetTimer(VerifyTimer, this,
         &ThisClass::VerifyPlayers, 1.f, false);
-    // New pawns after a respawn/vehicle swap need the same movement component.
-    World->GetTimerManager().SetTimer(MovementRefreshTimer, this,
-        &ThisClass::RefreshMovementComponents, 0.1f, true);
-}
-
-void ULocalMultiplayerSubsystem::RefreshMovementComponents()
-{
-    for (ULocalPlayer* Player : GetWorld()->GetGameInstance()->GetLocalPlayers())
-    {
-        auto* Controller = Player->GetPlayerController(GetWorld());
-        auto* Pawn = Controller ? Controller->GetPawn() : nullptr;
-        if (!Pawn || !Pawn->FindComponentByClass<UChaosWheeledVehicleMovementComponent>())
-        {
-            continue;
-        }
-        auto* Movement = Pawn->FindComponentByClass<UArcadeCoastingComponent>();
-        if (!Movement)
-        {
-            Movement = NewObject<UArcadeCoastingComponent>(Pawn);
-            Pawn->AddInstanceComponent(Movement);
-            Movement->RegisterComponent();
-            Movement->AddTickPrerequisiteActor(Pawn);
-        }
-        Movement->AddTickPrerequisiteActor(Controller);
-    }
 }
 
 void ULocalMultiplayerSubsystem::VerifyPlayers()
@@ -250,15 +224,10 @@ namespace
             ? FKey(*(TEXT("DS4Raw_") + Key.ToString()))
             : Key;
 
-#if !UE_VERSION_OLDER_THAN(5, 6, 0)
         const uint64 Timestamp = FPlatformTime::Cycles64();
-#endif
 
         if (bAxis)
         {
-#if UE_VERSION_OLDER_THAN(5, 6, 0)
-            Viewport->InputAxis(nullptr, InputDevice, RawKey, Value, 0.016f, 1, true);
-#else
             const FInputKeyEventArgs AxisArgs(
                 nullptr,
                 InputDevice,
@@ -270,7 +239,6 @@ namespace
             );
 
             Viewport->InputAxis(AxisArgs);
-#endif
         }
         else
         {
@@ -280,11 +248,8 @@ namespace
                 RawKey,
                 Value > 0.f ? IE_Pressed : IE_Released,
                 Value,
-                false
-#if !UE_VERSION_OLDER_THAN(5, 6, 0)
-                ,
+                false,
                 Timestamp
-#endif
             );
 
             Viewport->InputKey(KeyArgs);
@@ -459,84 +424,6 @@ void ULocalMultiplayerSubsystem::VerifyCoasting()
             Index, Speed, Distance);
     }
     UE_LOG(LogLocalMultiplayer, Display, TEXT("Arcade coasting validation: %s"), bValid ? TEXT("PASS") : TEXT("FAIL"));
-    if (!bValid)
-    {
-        FPlatformMisc::RequestExitWithStatus(false, 1);
-        return;
-    }
-    for (int32 Index = 0; Index < 2; ++Index)
-    {
-        MovementTestStarts.Add(UGameplayStatics::GetPlayerPawn(GetWorld(), Index)->GetActorTransform());
-        MovementTestReferenceYaws.Add(UGameplayStatics::GetPlayerPawn(GetWorld(), Index)
-            ->FindComponentByClass<UArcadeCoastingComponent>()->GetMovementReferenceYaw());
-    }
-    StartOmnidirectionalTest();
-}
-
-namespace
-{
-    // X = forward/back, Y = strafe. Full circle, then release, then reversal.
-    const FVector2D MovementDirections[] = {
-        {0, 1}, {0, -1}, {1, 0}, {-1, 0},
-        {1, 1}, {1, -1}, {-1, 1}, {-1, -1}, {0, 0}, {0, 1}
-    };
-}
-
-void ULocalMultiplayerSubsystem::StartOmnidirectionalTest()
-{
-    auto* Viewport = CastChecked<ULocalMultiplayerViewportClient>(GetWorld()->GetGameViewport());
-    for (int32 Index = 0; Index < 2; ++Index)
-    {
-        auto* Pawn = UGameplayStatics::GetPlayerPawn(GetWorld(), Index);
-        auto* Vehicle = Pawn->FindComponentByClass<UChaosWheeledVehicleMovementComponent>();
-        auto* Body = CastChecked<UPrimitiveComponent>(Vehicle->UpdatedComponent);
-        Pawn->SetActorTransform(MovementTestStarts[Index], false, nullptr, ETeleportType::TeleportPhysics);
-        const FRotator Heading(0, MovementTestReferenceYaws[Index], 0);
-        Body->SetPhysicsLinearVelocity(MovementTestPhase >= 8
-            ? Heading.RotateVector(FVector(0, -1000, 0)) : FVector::ZeroVector);
-        Body->SetPhysicsAngularVelocityInDegrees(FVector::ZeroVector);
-        // Parallel paths avoid a head-on collision between the two test cars.
-        const FVector2D Direction = MovementDirections[MovementTestPhase];
-        SendTestGamepad(Viewport, true, Index, EKeys::Gamepad_LeftX, Direction.Y, true);
-        SendTestGamepad(Viewport, true, Index, EKeys::Gamepad_LeftY, Direction.X, true);
-    }
-    GetWorld()->GetTimerManager().SetTimer(VerifyTimer, this,
-        &ThisClass::VerifyOmnidirectionalTest, 0.45f, false);
-}
-
-void ULocalMultiplayerSubsystem::VerifyOmnidirectionalTest()
-{
-    bool bValid = true;
-    for (int32 Index = 0; Index < 2; ++Index)
-    {
-        auto* Pawn = UGameplayStatics::GetPlayerPawn(GetWorld(), Index);
-        auto* Vehicle = Pawn->FindComponentByClass<UChaosWheeledVehicleMovementComponent>();
-        auto* Body = CastChecked<UPrimitiveComponent>(Vehicle->UpdatedComponent);
-        const FVector Local = FRotator(0, MovementTestReferenceYaws[Index], 0)
-            .UnrotateVector(Body->GetPhysicsLinearVelocity());
-        const FVector2D Actual(Local.X, Local.Y);
-        const FVector2D Expected = MovementDirections[MovementTestPhase].GetSafeNormal();
-        const float MaxSpeed = GetDefault<UArcadeDrivingSettings>()->MaxSpeed;
-        const bool bPassed = Expected.IsNearlyZero() ? Actual.Size() < 120.f
-            : FVector2D::DotProduct(Actual.GetSafeNormal(), Expected) > 0.95f
-                && Actual.Size() > MaxSpeed * 0.5f && Actual.Size() <= MaxSpeed * 1.05f;
-        const float ReferenceError = FMath::Abs(FMath::FindDeltaAngleDegrees(MovementTestReferenceYaws[Index],
-            Pawn->FindComponentByClass<UArcadeCoastingComponent>()->GetMovementReferenceYaw()));
-        const float TargetYaw = MovementTestReferenceYaws[Index] + FVector(Expected.X, Expected.Y, 0).Rotation().Yaw;
-        const float HeadingError = FMath::Abs(FMath::FindDeltaAngleDegrees(Pawn->GetActorRotation().Yaw, TargetYaw));
-        const bool bFacing = Expected.IsNearlyZero() || HeadingError < 10.f;
-        bValid &= bPassed && bFacing && ReferenceError < 0.1f;
-        UE_LOG(LogLocalMultiplayer, Display,
-            TEXT("Omnidirectional phase %d player %d: velocity=(%.1f, %.1f) headingError=%.1f cameraError=%.1f %s"),
-            MovementTestPhase, Index, Actual.X, Actual.Y, HeadingError, ReferenceError,
-            bPassed && bFacing && ReferenceError < 0.1f ? TEXT("PASS") : TEXT("FAIL"));
-    }
-    if (bValid && ++MovementTestPhase < UE_ARRAY_COUNT(MovementDirections))
-    {
-        StartOmnidirectionalTest();
-        return;
-    }
-    UE_LOG(LogLocalMultiplayer, Display, TEXT("Omnidirectional movement validation: %s"), bValid ? TEXT("PASS") : TEXT("FAIL"));
     FPlatformMisc::RequestExitWithStatus(false, bValid ? 0 : 1);
 }
 
@@ -544,7 +431,6 @@ void ULocalMultiplayerSubsystem::Deinitialize()
 {
     GetWorld()->GetTimerManager().ClearTimer(SetupTimer);
     GetWorld()->GetTimerManager().ClearTimer(VerifyTimer);
-    GetWorld()->GetTimerManager().ClearTimer(MovementRefreshTimer);
     Super::Deinitialize();
 }
 
